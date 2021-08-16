@@ -1,7 +1,11 @@
+/* Usando a função map para transformar um elemento em outro elemento(lembrando que o tamanho do array
+    continua o mesmo, apenas os elementos do conjunto são alterados). */
+
 const numbers = [1, 2, 3, 4, 5, 6]
 
+// const numbersV2 = numbers.map(el => * 2)
 const numbersV2 = numbers.map(function (el) {
-    return el * 22
+    return el * 2
 
 })
 
@@ -21,8 +25,13 @@ const students = [{
     },
     {
         name: 'Peter',
-        score: 9.1
+        score: 8.1
     }
 
 ]
 
+const getScore = el => el.score
+
+const result = students.map(getScore).map(Math.ceil)
+
+console.log("Result:", result)
