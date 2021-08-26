@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="alfredo"> 
+    <title>User Name Validation</title>
+</head>
+
+<body>
+
+    <h1>Test Validation</h1>
+
+
+    <p>The regex() method returns true if it finds a match, otherwise it returns false.</p>
+
+    <button onclick="CodelandUsernameValidation">Click here!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function CodelandUsernameValidation(str) {
+            let login = prompt("put your ID")
+            const regex = /^[a-zA-Z][a-zA-Z0-9_]*[^_]$/g
+            if (str.length >= 4 && str.length <= 25 && regex.test(str)) {
+                return true
+            } else {
+                return false
+            }
+            // code goes here  
+        }
+
+        const userName = CodelandUsernameValidation
+
+        // keep this function call here 
+        prompt(CodelandUsernameValidation(readline()))
+    </script>
+
+</body>
+
+</html>

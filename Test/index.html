@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>Apostila JavaScript Progressivo</title>
+    <style>
+        body,html {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="meuCanvas" width="600" height="400" style="border: 1px solid white; background: white;">
+        O Canvas não está ativado em seu Browser
+    </canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("meuCanvas");
+        var context = canvas.getContext("2d")
+
+        context.beginPath();
+        context.arc(300, 200, 150, 0, 2 * Math.PI);
+        context.stroke();
+    </script>
+</body>
+
+</html>
