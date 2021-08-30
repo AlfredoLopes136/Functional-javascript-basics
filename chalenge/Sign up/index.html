@@ -16,40 +16,40 @@
             <legend> Login </legend>
             <div class="input-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Put your name" />
+                <input type="text" id="name" name="name" placeholder="Name" />
             </div>
             <div class="input-group">
                 <label for="last name">Last name:</label>
-                <input type="text" id="lastName" placeholder="Put your last name" />
+                <input type="text" id="lastName" placeholder="Last name" />
             </div>
             <div class="input-group">
                 <label for="email">E-mail:</label>
-                <input type="text" id="email" placeholder="Put your email" />
+                <input type="text" id="email" placeholder="E-mail" />
             </div>
             <div class="input-group">
-                <label for="password">password:</label>
-                <input type="password" id="password" placeholder="Put your password" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" />
             </div>
             <div class="columns">
                 <div class="input-group">
                     <label for="fone">Fone number:</label>
-                    <input type="text" id="fone-number" placeholder="Put your fone number" />
+                    <input type="text" id="fone-number" placeholder="Fone number" />
                 </div>
                 <div class="input-group">
                     <label for="cep">CEP:</label>
-                    <input type="text" id="cep" placeholder="Put your CEP" />
+                    <input type="text" id="cep" placeholder="CEP" />
                 </div>
             </div>
             <!--Form-->
 
             <div class="columns">
                 <div class="input-group">
-                    <label for="sexo">Sexo:</label>
-                    <select name="sexo" id="sexo">
-                        <option value="">Informar...</option>
-                        <option value="">Masculino</option>
-                        <option value="">Feminino</option>
-                        <option value="">Não informar</option>
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+                        <!--<option value="">Informar...</option>-->
+                        <option v0alue="">Man</option>
+                        <option value="">Woman</option>
+                        <option value="">Other</option>
 
                     </select>
                 </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="footer">
-                <button type="button" class="botton" onclick="validation()">Send</button>
+                <button type="button" class="button" onclick="validation()">Send</button>
             </div>
         </form>
         <!--Javascript Code-->
@@ -76,7 +76,7 @@
                 var password = document.getElementById("password");
                 var foneNumber = document.getElementById("fone-number");
                 var CEP = document.getElementById("cep");
-                var sex = document.getElementById("sex");
+                var gender = document.getElementById("gender");
                 var newsLetter = document.getElementById("newsletter").checked;
 
                 // Checking field
@@ -116,10 +116,10 @@
                     return
                 }
 
-                if (sex === "") {
-                    alert("Sex not informed");
+                if (gender === "") {
+                    alert("gender not informed");
 
-                    sex.focus();
+                    gender.focus();
                     return
                 }
                 alert("Sending formulary")
