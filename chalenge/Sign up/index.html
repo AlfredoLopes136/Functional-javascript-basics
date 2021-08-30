@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validation</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Formulário -->
+        <form action="" id="formulario" method="POST" name="formulario">
+            <legend> Login </legend>
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="put your name" />
+            </div>
+            <div class="input-group">
+                <label for="last name">Last name</label>
+                <input type="text" id="last-name" placeholder="put your last name" />
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="put your email" />
+            </div>
+            <div class="input-group">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="put your passcode" />
+            </div>
+            <div class="columns">
+                <div class="input-group">
+                    <label for="fone">Fone number</label>
+                    <input type="text" id="fone-number" placeholder="put your fone number" />
+                </div>
+                <div class="input-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" placeholder="put your CEP" />
+                </div>
+            </div>
+            <!--Form-->
+
+            <div class="columns">
+                <div class="input-group">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="">Informar...</option>
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                        <option value="">Não informar</option>
+
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="newsletter">Newsletter</label>
+                    <input type="checkbox" id="newsletter">
+                    <small>I would like to receive news</small>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" class="botton" onclick="validation()">Send</button>
+            </div>
+            <!--Sexo-->
+
+            <!--Javascript Code-->
+            <!-- <input type="button" onclick="validation()" value="Exibir Alert" />-->
+
+        </form>
+    </div>
+</body>
+
+</html>
