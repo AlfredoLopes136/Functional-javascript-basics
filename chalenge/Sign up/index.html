@@ -12,32 +12,32 @@
 <body>
     <div class="wrapper">
         <!-- Formulário -->
-        <form action="" id="formulario" method="POST" name="formulario">
+        <form action="" id="formulary" method="POST" name="formulary">
             <legend> Login </legend>
             <div class="input-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="put your name" />
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Put your name" />
             </div>
             <div class="input-group">
-                <label for="last name">Last name</label>
-                <input type="text" id="last-name" placeholder="put your last name" />
+                <label for="last name">Last name:</label>
+                <input type="text" id="lastName" placeholder="Put your last name" />
             </div>
             <div class="input-group">
-                <label for="email">E-mail</label>
-                <input type="text" id="email" placeholder="put your email" />
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Put your email" />
             </div>
             <div class="input-group">
-                <label for="password">password</label>
-                <input type="password" id="password" placeholder="put your passcode" />
+                <label for="password">password:</label>
+                <input type="password" id="password" placeholder="Put your password" />
             </div>
             <div class="columns">
                 <div class="input-group">
-                    <label for="fone">Fone number</label>
-                    <input type="text" id="fone-number" placeholder="put your fone number" />
+                    <label for="fone">Fone number:</label>
+                    <input type="text" id="fone-number" placeholder="Put your fone number" />
                 </div>
                 <div class="input-group">
-                    <label for="cep">CEP</label>
-                    <input type="text" id="cep" placeholder="put your CEP" />
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" placeholder="Put your CEP" />
                 </div>
             </div>
             <!--Form-->
@@ -63,12 +63,69 @@
             <div class="footer">
                 <button type="button" class="botton" onclick="validation()">Send</button>
             </div>
-            <!--Sexo-->
-
-            <!--Javascript Code-->
-            <!-- <input type="button" onclick="validation()" value="Exibir Alert" />-->
-
         </form>
+        <!--Javascript Code-->
+
+        <script>
+            /* Validation Function */
+            function validation() {
+                // Geting names by id 
+                var name = document.getElementById("name");
+                var lastName = document.getElementById("last-name");
+                var email = document.getElementById("email");
+                var password = document.getElementById("password");
+                var foneNumber = document.getElementById("fone-number");
+                var CEP = document.getElementById("cep");
+                var sex = document.getElementById("sex");
+                var newsLetter = document.getElementById("newsletter").checked;
+
+                // Checking field
+                if (name === "") {
+                    alert("Name not informed");
+
+                    name.focus();
+                    return
+                }
+
+
+                if (lasName === "") {
+                    alert("Last-name not informed");
+
+                    lastName.focus();
+                    return
+                }
+
+                if (email === "") {
+                    alert("E-mail not informed");
+
+                    email.focus();
+                    return
+                }
+
+                if (password === "") {
+                    alert("Password not informed");
+
+                    password.focus();
+                    return
+                }
+
+                if (CEP === "") {
+                    alert("CEP not informed");
+
+                    cep.focus();
+                    return
+                }
+
+                if (sex === "") {
+                    alert("Sex not informed");
+
+                    sex.focus();
+                    return
+                }
+                alert("Sending formulary")
+
+            }
+        </script>
     </div>
 </body>
 
