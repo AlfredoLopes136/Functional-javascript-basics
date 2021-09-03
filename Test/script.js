@@ -36,37 +36,59 @@ function tipo(a) {
     }
 }
 
-const nome = tipo("eoo") 
+const nome = tipo("eoo")
 console.log(nome)
 
 function potenciade2(a) {
-    return function(b) {
+    return function (b) {
         return Math.floor(a, b)
     }
-} 
+}
 
-const potenciaSoma = potenciade2(50) (3)
+const potenciaSoma = potenciade2(50)(3)
 console.log(potenciaSoma)
 
 
 function pontenciade2(n) {
-    return function  (b) {
+    return function (b) {
         return Math.pow
-        
+
     }
-    
+
 }
 
 function potenciadedois(base) {
-    return function(exp) {
+    return function (exp) {
         return Math.pow(base, exp)
+
+    }
+
+}
+
+
+const soma = fn => fn + 2
+console.log(soma(5))
+
+
+
+function potCia(pr) {
+    return function (pr2) {
+        return Math.pow(pr, pr2)
+    }
+}
+const calculo = potCia(3)
+console.log(calculo(4)) 
+
+function somar(a) {
+    return function(b) {
+        return function (c) {
+            return a + b + c
+            
+        }
         
     }
     
 }
 
-const calcula = potenciadedois(2)
-console.log(calcula(2))
-
-const all2 = fn => a + 3
-console.log(all2(2))
+const somarAb = somar(3)(4)
+console.log(somarAb(2))
