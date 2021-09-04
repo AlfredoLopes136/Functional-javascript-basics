@@ -21,13 +21,13 @@ const somar = (...numeros) => {
     return total
 }
 
-console.log(somar(1,2,3,))
-console.log(somar(1,2,3,4,5))
-console.log(somar(1,2,3,4,5,6,7,8))
+console.log(somar(1, 2, 3, ))
+console.log(somar(1, 2, 3, 4, 5))
+console.log(somar(1, 2, 3, 4, 5, 6, 7, 8))
 
-const somarN = fn => (a,b) => a + b + 2
+const somarN = fn => (a, b) => a + b + 2
 
-console.log(somarN(2)(2,3))
+console.log(somarN(2)(2, 3))
 
 const potenciaDeDois = base => expo => Math.pow(base, expo)
 
@@ -37,8 +37,31 @@ console.log(potenciaDeDois(2)(10))
 
 Array.prototype.ult = function () {
     console.log(this[this.length - 1])
-    
+
 }
 // Eu estou chamando a partir de num a função ult
-const num = [1,2,3]
+const num = [1, 2, 3]
 num.ult()
+
+function somar2(f) {
+    return function (j) {
+        return f + j
+
+    }
+
+}
+
+const somaAll = somar2(4)
+console.log(somaAll(3))
+
+
+
+function potenciacao(bas) {
+    return function (ex) {
+        return Math.pow(bas, ex)
+    }
+}
+
+const all2 = potenciacao(2)
+console.log(all2(2))
+

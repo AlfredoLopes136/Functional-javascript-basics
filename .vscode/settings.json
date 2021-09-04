@@ -2,5 +2,7 @@
     "editor.tokenColorCustomizations": {
         "comments": "#96b0ac"
     },
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "editor.fontFamily": "'Hack Regular' ",
+    "editor.fontSize": 19
 }
